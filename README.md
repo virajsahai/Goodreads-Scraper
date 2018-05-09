@@ -12,6 +12,6 @@ This python script scrapes Goodreads for a variety of information. I don't claim
 	- Results will be placed in a .csv file called 'scraped_csv.csv'
 	NOTE: Currently, the csv file is always over-written and not appended. Make sure to save previous data.
 
-###Written by Viraj Sahai (github.com/virajsahai).
-###Available to use under the GNU PLv3 under the condition that these comments will not be removed.
-###The author doesn't support any commercial use of this software for commercial purposes.
+##### Written by Viraj Sahai (github.com/virajsahai).
+##### Available to use under the GNU PLv3 under the condition that these comments will not be removed.
+##### The author doesn't support any commercial use of this software for commercial purposes.

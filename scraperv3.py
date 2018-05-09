@@ -1,6 +1,6 @@
 ###Written by Viraj Sahai (github.com/virajsahai).
 ###Available to use under the GNU PLv3 under the condition that these comments will not be removed.
-###The author doesn't support any commercial use of this software for commercial purposes.
+###The author doesn't support any commercial use of this software.
 
 
 import urllib2
@@ -57,10 +57,10 @@ if __name__ == '__main__':
     for i in isbn_list:
         url_list.append('https://www.goodreads.com/book/isbn/'+i)
 
-    ###change pool number here for faster speed
+    ###change pool number here for faster speed but it will put system resources under pressure.
     p = Pool(10)
     data = p.map(get_data, url_list)
 
     ###write to csv here  
     with open('scraped_csv.csv', 'wb') as f:
-        f.write(("\n".join(data)).encode('ascii','ignore')) #??? UTF or ASCII ???#
+        f.write(("\n".join(data)).encode('ascii','ignore')) #??? UTF or ASCII ???# File is currently written as ASCII.
